@@ -1,0 +1,18 @@
+class C1 {
+    void display() {
+        System.out.println("Initial Method");
+    }
+}
+
+class C2 extends C1 {
+    void display(){
+        System.out.println("After Overriding");
+    }
+}
+
+public class MethodOverriding {
+    public static void main(String[] args) {
+        C2 obj = new C2();
+        obj.display();
+    }
+}
