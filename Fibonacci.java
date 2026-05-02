@@ -1,28 +1,25 @@
-class Fibonacci {
 
+class Fibonacci {
     int n;
 
-    Fibonacci(int num) {
-        n = num;
+    Fibonacci(int n) {
+        this.n = n;
     }
 
     void printSeries() {
-        int a = 0, b = 1;
+        int a = 0, b = 1, c;
 
         System.out.print("Fibonacci Series: ");
-
         for (int i = 1; i <= n; i++) {
             System.out.print(a + " ");
-            int next = a + b;
+            c = a + b;
             a = b;
-            b = next;
+            b = c;
         }
     }
 
-
     public static void main(String[] args) {
-
-        Fibonacci obj = new Fibonacci(10);
+        Fibonacci obj = new Fibonacci(7);
         obj.printSeries();
     }
 }

@@ -1,33 +1,20 @@
 class Student {
-
+    int rollNo;
     String name;
-    int age;
 
-    // Default constructor
-    Student() {
-        name = "alom";
-        age = 21;
-    }
-
-    // One parameter constructor
-    Student(String n) {
+    // Parameterized Constructor
+    Student(int r, String n) {
+        rollNo = r;
         name = n;
-        age = 18;
-    }
-
-    // Two parameter constructor
-    Student(String n, int a) {
-        name = n;
-        age = a;
     }
 
     void display() {
-        System.out.println(name + " " + age);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Name: " + name);
     }
 
     public static void main(String[] args) {
-        new Student().display();
-        new Student("krish").display();
-        new Student("Raj", 20).display();
+        Student s1 = new Student(101, "Harmeet");
+        s1.display();
     }
 }

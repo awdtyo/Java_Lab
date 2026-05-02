@@ -1,5 +1,4 @@
 class ReverseNumber {
-
     int num;
 
     ReverseNumber(int n) {
@@ -7,21 +6,17 @@ class ReverseNumber {
     }
 
     void reverse() {
-        int reverse = 0;
-        int temp = num;
+        int rev = 0, temp = num;
 
         while (temp != 0) {
-            int digit = temp % 10;
-            reverse = reverse * 10 + digit;
+            rev = rev * 10 + temp % 10;
             temp = temp / 10;
         }
 
-        System.out.println("Reversed Number = " + reverse);
+        System.out.println("Reversed Number = " + rev);
     }
 
-
     public static void main(String[] args) {
-
         ReverseNumber obj = new ReverseNumber(1234);
         obj.reverse();
     }

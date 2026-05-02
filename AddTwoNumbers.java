@@ -1,13 +1,10 @@
-class AddNumbers {
-int a, b; 
-void add() { 
-int sum = a + b; 
-System.out.println("Sum = " + sum); 
-}
-public static void main(String[] args) {
-AddNumbers obj = new AddNumbers(); 
-obj.a = 10;
-obj.b = 20; 
-obj.add();
-}
+class AddTwoNumbers {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        AddTwoNumbers obj = new AddTwoNumbers();
+        System.out.println("Sum = " + obj.add(10, 20));
+    }
 }
